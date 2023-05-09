@@ -1,0 +1,103 @@
+body{
+  background-color: #0E1F2D;
+  padding: 20px;
+}
+
+.App{
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+  height: 95vh;
+  background-color: #F5F5F5;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.dice-container{
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  gap: 15px;
+}
+
+.title{
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+
+.inst{
+  font-size: 1.2rem;
+}
+
+button{
+  background-color: #0E1F2D;
+  border-radius: 5px;
+  width: 150px;
+  padding: 10px;
+  border: none;
+  color: white;
+  font-size: 1.4rem;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+button:active{
+  box-shadow: inset 0px 5px 10px -3px rgba(0, 0, 0, 0.7);
+  transform: scale(.95);
+}
+
+.watch-bar{
+  position: absolute;
+  bottom: 0;
+  height: 15%;
+  width: 150px;
+  background-color: #0E1F2D;
+  border-radius: 40px 40px 0 0;
+  padding-top: 9px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: baseline;
+  flex-direction: column;
+  color: white;
+}
+
+.watch-bar h5{
+  font-size: 1.2rem;
+}
+
+.modal-container{
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.39);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-container .modal{
+  background-color: white;
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 1.5rem;
+}
+
+.modal-container .modal p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
